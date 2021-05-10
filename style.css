@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+*:focus
+{
+    outline: 0;
+}
+html,
+body
+{
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.chat{
+    height: 100%;
+    display: flex;
+   
+}
+.sidebar{
+    width: 300px;
+    min-width: 300px;
+    background: #eee;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    height: 50px;
+    min-height: 50px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+}
+input{
+    width: 100%;
+    height: 30px;
+    background: white;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 0 35px 0 15px;
+}
+.content{
+    flex: 1;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+
+}
+.search i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:37px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+
+}
+.contacts{
+    overflow: auto;
+    flex: 1;
+}
+.contacts ul li a{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding:  0 10px;
+}
+.contacts ul li.active a,
+.contacts ul li a:hover 
+{
+    background-color: white;
+}
+.contacts ul li a .notification
+{
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: red;
+font-size: 11px;
+color: white;
+text-align: center;
+line-height: 17px;
+margin-left: auto;
+}
+.contacts ul li a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.contacts ul li a  .contact .name{
+    font-size:  15px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.contacts ul li a  .contact .message{
+    font-size:  13px;
+    color: #999;
+    
+}.content .message-content
+{
+    flex: 1;
+}
+
+
+.content .message-header{
+height: 50px;
+min-height: 50px;
+border-bottom: 1px solid #ddd;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:  0 15px;
+
+}
+
+.user-info
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.user-info img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-info .user .name
+{
+    font-size: 15px;
+    font-weight: 500;
+    color:#222;
+}
+.user-info .user .time
+{
+    font-size: 13px;
+    color: #999;
+
+}
+.message-header .actions ul
+{
+    display: flex;
+}
+.message-header .actions ul li{
+    margin-left: 10px;
+}
+.message-header .actions ul li a{
+    font-size: 19px;
+    color: grey;
+    display: block;
+    width: 30px;
+    text-align: center;
+
+}
+.message-header .actions ul li a:hover
+{
+    color:#222;
+}
+.content .message-form{
+    border-top: 1px solid #ddd;
+    background:#eee;
+    padding: 10px ;
+
+}
+.content .message-form ul {
+    display: flex;
+}
+.message-form ul{
+    display: flex;
+}
+.message-form ul li.input{
+    flex: 1;
+    
+} 
+.message-form ul li.input input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 36px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.message-form ul li a {
+    width: 36px;
+    height: 36px;
+    display: block;
+    border-radius:50%;
+    background:#333;
+    color: #fff;
+    text-align:center;
+    line-height:36px;
+
+
+}
